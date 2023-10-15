@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>First Number</label>
+    <br>
+    <input type="text" id="a">
+    <br>
+    <label>Second Number</label>
+    <br>
+    <input type="number" id="b">
+    <hr>
+    <p>Answer: <span id="c"></span></p>
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+        let a = document.getElementById("a");
+        let b = document.getElementById("b");
+        let c = document.getElementById("c");
+
+        function calculate(){
+            console.log(Number(a.value),typeof Number(a.value));
+            console.log(b.valueAsNumber,typeof b.valueAsNumber);
+
+            let result = Number(a.value) + b.valueAsNumber;
+            
+            console.log(result);
+            c.innerText = result;
+            a.value = b.value ="";
+        }
+
+    </script>
+</body>
+</html>

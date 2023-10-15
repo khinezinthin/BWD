@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function expression nat pl ya
+        // let one = function(){
+        //     return "this is one";
+        // }
+        let one = () => "this is one";
+        // let one = _ => "this is one";
+
+
+        // let two = function(){
+        //     let x = "two";
+        //     return "this is two";
+        // }
+        let two = () => {
+            let x = "two";
+            return "this is two";
+        }
+
+
+        // let three = function(x){
+        //     return "this is " + x;
+        // }
+        let three = (x) => "this is " + x;
+
+
+        // let four = function(x,y){
+        //     let z = x + y;
+        //     return z;
+        // }
+        // let four = (x,y) => {
+        //     let z = x + y;
+        //     return z;
+        // }
+        let four = (x,y) => x + y;
+
+
+        // (function(){
+        //     console.log("this is five");
+        //     return "this is five"
+        // })()
+        (() => {
+            console.log("this is five");
+            return "this is five"
+        })()
+
+
+        // window.addEventListener("load",function(){
+        //     console.log("this is six");
+        // })
+        window.addEventListener("load",() => console.log("this is six"))
+
+        let seven = {
+            name : "seven",
+            ShowName : function(){
+                console.log(this.name);
+            },
+            MyName : () => `this is ${seven.name}`
+        }
+
+        const fruits = ["apple","orange","lemon","mango"];
+        // let result = fruits.filter(function(el){
+        //     return el.length == 5;
+        // }).map(function(el){
+        //     return el.toUpperCase();
+        // }).join("-").toLowerCase();
+        // console.log(result)
+
+        let result = fruits.filter((el) => el.length == 5).map((el) => el.toUpperCase()).join("-").toLowerCase();
+        console.log(result)
+    </script>
+</body>
+</html>

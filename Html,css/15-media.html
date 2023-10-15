@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: skyblue;
+        }
+        p{
+            width: 30%;
+            padding: 20px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        @media screen and (max-width:1024px) {
+            body{
+                background-color: pink;
+            }
+            p{
+                width: 40%;
+            }
+            p:last-child{
+                width: 80%;
+            }
+        }
+        @media screen and (max-width:480px) {
+            body{
+                background-color: orange;
+            }
+            p{
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, expedita similique. Architecto, magnam? Libero excepturi, quas provident expedita, rem fuga voluptatum consequuntur error sit doloremque, molestias aut sint adipisci cumque!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, expedita similique. Architecto, magnam? Libero excepturi, quas provident expedita, rem fuga voluptatum consequuntur error sit doloremque, molestias aut sint adipisci cumque!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, expedita similique. Architecto, magnam? Libero excepturi, quas provident expedita, rem fuga voluptatum consequuntur error sit doloremque, molestias aut sint adipisci cumque!
+    </p>
+</body>
+</html>

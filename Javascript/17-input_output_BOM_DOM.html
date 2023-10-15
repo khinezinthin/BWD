@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">hello world</h1>
+    <p>  
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatem saepe ab, provident sapiente perspiciatis laboriosam eum eius nam dolorem. Enim asperiores necessitatibus alias animi nisi optio esse est deserunt!
+    </p>
+    <p>This is paragraph</p>
+    <input id="inputText" type="text">
+    <button onclick="changeHeader()">Click Me</button>
+    <ul>
+        <li>apple</li>
+        <li>orange</li>
+        <li>mango</li>
+        <li>banana</li>
+    </ul>
+    <script>
+        // let inputText = prompt("say somthing");
+        // document.getElementById("header").innerText = inputText;
+
+        let i = document.getElementById("inputText");
+        function changeHeader(){
+            let inputText = i.value;
+            document.getElementById("header").innerText = inputText;
+            console.log(inputText);
+        }
+        // window input text
+        // let name = window.prompt("what is your name");
+
+        // window output text
+        // window.alert(name);
+        // console.log(name);
+
+        // true or false | yes or no
+        // let x = window.confirm("ser pp lr")
+        // document.write(`<h1>${x ? "ser pee pr p" : "ma ser ya ty pr"}</h1>`);
+
+        
+        
+    </script>
+</body>
+
+<!-- <body>
+    <h1 id="head">Hello world</h1>
+    <input type="text" id="text">
+    <button onclick="handler()" id="btn">click</button>
+
+    <script>
+        const head = document.getElementById("head")
+        const input = document.getElementById("text")
+        // document.getElementById("btn").addEventListener("click",()=>{
+        //     head.innerText = input.value
+        // })
+
+        // function handler (){
+        //     head.innerText = input.value
+        // }
+
+        // const handler = ()=>{
+        //     head.innerText = input.value
+        // }
+
+        document.getElementById("btn").onclick = function handler(){
+            head.innerText = input.value
+        }
+
+    </script>
+</body> -->
+</html>

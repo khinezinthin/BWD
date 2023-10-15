@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .box{
+            width: 200px;
+            padding: 30px;
+            margin-bottom: 10px;
+            font-size: 100px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        .opposite{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>yes</p>
+    </div>
+    <button id="changeBtn">
+        make opposite
+    </button>
+
+    <script>
+        let box = document.querySelector(".box");
+        let text = box.children[0];
+
+        document.getElementById("changeBtn").addEventListener("click",function(){
+            // change html
+            // box.children[0].innerText = "no";
+            if(text.innerText == "yes"){
+                text.innerText = "no"
+            }else{
+                text.innerText = "yes"
+            }
+
+            // change css
+            // box.style.background = "white"
+            // box.style.color = "black"
+            box.classList.toggle("opposite");
+        })
+    </script>
+</body>
+</html>

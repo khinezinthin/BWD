@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+        }
+        .detectArea{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <img src="../img/off.gif" id="bulb" alt="">
+    <br>
+    <br>
+    <br>
+    <div>
+        <button onclick="lightOn()">light on</button>
+        <button onclick="lightOff()">light off</button>
+    </div>
+    <br><hr>
+
+    <div>
+        <button onclick="toggleSwitch()">Touch Button</button>
+    </div><hr>
+
+    <div>
+        <button onclick="toggleSwitch()">Switch 1</button>
+        <button onclick="toggleSwitch()">Switch 2</button>
+    </div><hr>
+
+    <div class="detectArea">
+        Detected Area
+    </div>
+
+    <script>
+        let lightBulb = document.getElementById("bulb");
+        // let on = document.getElementById("on")
+        // let off = document.getElementById("off")
+
+        // on.addEventListener("click",function(){
+        //     lightBulb.setAttribute("src","../img/on.gif")
+        // })
+
+        // off.addEventListener("click",function(){
+        //     lightBulb.setAttribute("src","../img/off.gif")
+        // })
+
+        function lightOn(){
+            lightBulb.setAttribute("src","../img/on.gif")
+        }
+
+        function lightOff(){
+            lightBulb.setAttribute("src","../img/off.gif")
+        }
+
+        // document.getElementById("switch").addEventListener("click",function(){
+        //     if(lightBulb.getAttribute("src") == "../img/on.gif"){
+        //         lightOff();
+        //     }else{
+        //         lightOn();
+        //     }
+        // })
+    
+        function toggleSwitch(){
+            if(lightBulb.getAttribute("src") == "../img/on.gif"){
+                lightOff();
+            }else{
+                lightOn();
+            }
+        }
+
+        document.querySelector(".detectArea").addEventListener("mouseenter",function(){
+            lightOn();
+            setTimeout(lightOff,3000);
+        })
+    </script>
+</body>
+</html>

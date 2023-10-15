@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits = ["apple", "orange", "banana", "mango", "lemon"];
+        let marks = [40,30,20,10,50,60];
+        let myInfo ={
+            name : "khine zin thin",
+            age : 19,
+            liveIn : "yangon"
+        }
+
+        for (let i=0; i<fruits.length; i++){
+            console.log(i + "--" +fruits[i]);
+        }
+
+        // let total = 0;
+        // for (let i=0; i<marks.length; i++){
+        //     console.log(marks[i]);
+        //     total +=marks[i];
+        // }
+        // console.log(total);
+
+                // OR
+
+        // let total = 0;
+        // for(mark of marks){
+        //     console.log(mark);
+        //     total += mark;
+        // }
+        // console.log(total);
+
+        // FOR OF ==> array only ==> ka a khan ta khan chin ko ko ser pyu
+        // eg shay ka x
+        for(x of fruits){
+            console.log(x);
+        }
+
+        let total = 0;
+        for(mark of marks){
+            console.log(total += mark);
+        }
+
+        // FOR IN ==> array and object |array hmr so index /object hmr so key ko ko ser pyu
+
+        for(x in fruits){
+            console.log(x + " " + fruits[x]);
+        }
+
+        for(x in myInfo){
+            console.log(x+ "  - "+ myInfo[x]);
+            console.log(typeof(x));
+        }
+    </script>
+</body>
+</html>

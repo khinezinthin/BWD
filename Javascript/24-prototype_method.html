@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // string method
+        let text = "kjkasjskj dolor kjkhsdjfs dolor alkjfkhf dolor";
+        let name = "khine zin thin";
+        let aa = "     khine zin thin     ";
+        let x = "5";
+        console.log(name);
+        console.log(name.length);
+        console.log(name.substr(0,5));
+        console.log(name.search("zin"));
+        console.log(text.replace("dolor","abc"));
+        // text.replace(/dolor/g,"abc")
+        // text.replace(/dolor/i,"abc")
+        console.log(aa.trim());
+        // number ka string phit ya ml
+        console.log(x.padStart(10,"0"));
+        console.log(x.padEnd(10,"0"));
+        console.log(text.split(" "));
+
+        // number method
+        let age = 19;
+        let y = 123.567;
+        let weight = "34.567lb";
+
+        console.log(age.toString());
+        console.log(y.toFixed(3));
+        console.log(y.toPrecision(3));
+        console.log(Number(x));
+        console.log(parseInt(weight));
+        console.log(parseFloat(weight));
+        console.log(Math.floor(y));
+        console.log(Math.ceil(y));
+
+        // object method
+        let myself ={
+            name : "kzt",
+            age : 19,
+        };
+
+        console.log(Object.keys(myself));
+        console.log(Object.values(myself));
+
+    </script>
+</body>
+</html>

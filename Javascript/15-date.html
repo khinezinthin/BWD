@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let d = new Date();
+        // console.log(d.getHours() + ":" + d.getMinutes());
+        // console.log(`${d.getDate()} / ${d.getMonth()} / ${d.getFullYear()}`);
+
+        // d.toString()
+        // 'Fri Sep 09 2022 19:01:34 GMT+0630 (Myanmar Time)'
+        // d.toDateString()
+        // 'Fri Sep 09 2022'
+        // d.toTimeString()
+        // '19:01:34 GMT+0630 (Myanmar Time)'
+        // d.toLocaleString()
+        // '9/9/2022, 7:01:34 PM'
+        // d.toLocaleString("en-AU")
+        // '09/09/2022, 7:01:34 pm'
+        // d.toLocaleString("en-CA")
+        // '2022-09-09, 7:01:34 p.m.'
+        // d.toLocaleString("ko-KB")
+        // '2022. 9. 9. 오후 7:01:34'
+        // d.toLocaleDateString("ko-KB")
+        // '2022. 9. 9.'
+        // d.toLocaleTimeString("ko-KB")
+        // '오후 7:01:34'
+
+        // let d = new Date(2050,7,15); 
+
+        let d = new Date();
+        console.log(d);
+        // d.setDate(27);
+
+        // let currentHour = d.getHours();
+        // d.setHours(currentHour+300);
+
+        // let currentMonth = d.getMonth();
+        // d.setMonth(currentMonth+4);
+        // d.setMonth(d.getMonth()+4);
+        // console.log(d);
+
+        let totalHour = 50;
+        let learHour = 2;
+        let dayToFinish = totalHour / learHour;
+        d.setDate(d.getDate()+dayToFinish);
+        console.log(d);
+        
+    </script>
+</body>
+</html>

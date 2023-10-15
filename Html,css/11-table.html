@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Table</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+        <style>
+            *{
+                font-family: 'DynaPuff', cursive;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .title{
+                color: #fc5185;
+            }
+            .title span{
+                color: #83e85a;
+            }
+            table{
+                border-collapse: collapse;
+                width: 100%;
+            }
+            tr{
+                border-bottom: 1px solid black;
+            } 
+            td,th{
+                padding: 10px 15px;
+                border: 1px solid black;
+            }
+            tbody tr:hover{
+                background-color: #83e85a;
+            }
+            thead{
+                background-color: #fc5185;
+                color: white;
+            }
+            thead th{
+                text-align: left;
+            }
+            tbody tr td:first-child{
+                background-color: #fcb1b1;
+                color: white;
+            }
+            .text-right{
+                text-align: right;
+            }
+            .total{
+                text-align: center;
+                font-weight: bold;
+                color: black !important;
+                background-color: #fff !important;
+            }
+        </style>
+    </head>
+    <body>
+        <h4 class="title">Table <span>Css</span></h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Course</th>
+                    <th class="text-right">Fee</th>
+                    <th class="text-right">Discount</th>
+                    <th class="text-right">Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>BWD (Basic Web Design)</td>
+                    <td class="text-right">20000</td>
+                    <td class="text-right">100%</td>
+                    <td class="text-right">0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>SWD (Special Web Design)</td>
+                    <td class="text-right">100000</td>
+                    <td class="text-right">80%</td>
+                    <td class="text-right">20000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Web Dev (Web Development)</td>
+                    <td class="text-right">100000</td>
+                    <td class="text-right">50%</td>
+                    <td class="text-right">50000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Laravel (Laravel Framework)</td>
+                    <td class="text-right">100000</td>
+                    <td class="text-right">50%</td>
+                    <td class="text-right">50000</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="total">Total</td>
+                    <td>120000</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

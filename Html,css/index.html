@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-top: 0px;
+        }
+        #nav{
+            border: 2px solid black;
+            margin: 0px 100px;
+            background-color: papayawhip;
+            border-radius: 50px;
+            box-shadow: 2px 5px 10px gray;
+        }
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        ul li{
+            list-style: none;
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+            transition: 1000ms;
+            padding-bottom: 3px;
+        }
+        ul li a:hover{
+            color: red;
+        }
+        #active{
+            border-bottom: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="index.html" id="active">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">about us</a></li>
+        </ul>
+    </div>
+    <h1>index</h1>
+</body>
+</html>

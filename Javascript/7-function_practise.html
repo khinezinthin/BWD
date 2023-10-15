@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // area function
+        let record=[];
+        let index = 0;
+        function saveRecord(w,b,r){
+            record[index] = {
+                width :w,
+                breath :b,
+                result :r
+            };
+            index++;
+        }
+        function calcArea(width,breath){
+            let calc = width * breath;
+            let result = calc + " sqft";
+            saveRecord(width,breath,result);
+            return result;
+        }
+
+        // exchange function
+        let rates={
+            mmk :1,
+            usd : 1636,
+            eur : 1933,
+            sgd : 1208
+        }
+        function exchangeToMmk(amount,currency){
+            let calc = amount * rates[currency];
+            let result = calc + " mmk";
+            return result;
+        }
+
+        function exchangeFromMmk(amount,currency){
+            let calc = amount / rates[currency];
+            let result = calc +" "+ currency;
+            return result;
+        }
+
+        // function exchange(amount,to,from){
+        //     let mmk = exchangeToMmk(amount*from);
+        //     console.log(mmk);
+        //     let toCurrency = exchangeFromMmk(parseFloat(mmk),to);
+        //     console.log(toCurrency);
+        //     return {
+        //         from : amount + from,
+        //         to : toCurrency
+        //     }
+        // }
+        // console.log(exchange(100,"usd","eur"))
+
+        // fruit
+        let fruitPrice ={
+            orange : 100,
+            mango : 50,
+            apple : 70
+        }
+
+        function calcTax(amount,percentage=5){
+            return (amount*percentage)/100;
+        }
+        function calcCost(quntity,fruit){
+            let calc = quntity * fruitPrice[fruit];
+            let result = calc + " mmk";
+            return {
+                name : fruit,
+                unitprice : fruitPrice[fruit],
+                quntity : quntity,
+                cost : calc,
+                tax : calcTax(calc),
+                total : calc + calcTax(calc)
+            };
+        }
+    </script>
+</body>
+</html>

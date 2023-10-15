@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>flex Box</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .w-300{
+                width: 300px;
+            }
+            .box{
+                height: 500px;
+                border: 1px solid black;
+                margin: 30px;
+                display: flex;
+                /* flex ka parents ka nay pl keep */
+                /* row horizontal keep */
+                /* flex-direction hmr row-revrse so pyg pyan hlan pay */
+                flex-direction: row;
+                /* warp so width a pyae u pee outsin */
+                flex-wrap: wrap;
+                /* flex flow ka 2khu pg yay tr */
+                /* flex-flow: row wrap; */
+                /* justify content -> left ko start right ko end */
+                justify-content: space-evenly;
+
+                /* coloumn vertical keep / parents height shi hma a lote phit*/
+                align-items: flex-start;
+                align-content: flex-start;
+                /* nowrap pl use tr myer tl flex 1khu 1 rol ma hote yin kepp ya khat */
+
+                /* children ka keep ways thu class htl align-self nat win yay */
+            }
+            .bg-one{
+                background-color: salmon;
+                /* order nat pyn si lox ya */
+                /* order: 3;   */
+                /* flex-grow -> width thu br tr parents ka nay a nyi a hmya u */
+                flex-grow: 1;
+            }
+            .bg-two{
+                background-color: skyblue;
+                /* align-self: flex-end; */
+                flex-grow: 5;
+            }
+            .bg-three{
+                background-color: palegreen;
+                /* align-self: center; */
+                flex-grow: 1;
+            }
+            .bg-four{
+                background-color: palevioletred;
+            }
+            .bg-five{
+                background-color: peru;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="w-300 bg-one">
+                <h3>this is one</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eaque dolores obcaecati molestiae fuga? A, sunt consectetur dicta magnam nemo neque dolor harum quos ipsum, provident voluptate amet corrupti! Esse.
+                </p>
+            </div>
+            <div class="w-300 bg-two">
+                <h3>this is two</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eaque dolores obcaecati molestiae fuga? A, sunt consectetur dicta magnam nemo neque dolor harum quos ipsum, provident voluptate amet corrupti! Esse.
+                </p>
+            </div>
+            <div class="w-300 bg-three">
+                <h3>this is three</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eaque dolores obcaecati molestiae fuga? A, sunt consectetur dicta magnam nemo neque dolor harum quos ipsum, provident voluptate amet corrupti! Esse.
+                </p>
+            </div>
+            <!-- <div class="w-300 bg-four">
+                <h3>this is four</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eaque dolores obcaecati molestiae fuga? A, sunt consectetur dicta magnam nemo neque dolor harum quos ipsum, provident voluptate amet corrupti! Esse.
+                </p>
+            </div>
+            <div class="w-300 bg-five">
+                <h3>this is five</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eaque dolores obcaecati molestiae fuga? A, sunt consectetur dicta magnam nemo neque dolor harum quos ipsum, provident voluptate amet corrupti! Esse.
+                </p>
+            </div> -->
+        </div>
+    </body>
+</html>

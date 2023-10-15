@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // global scope
+        let a = 5;
+        console.log(a);
+        
+        // hoisting
+        console.log(name());
+        // console.log(run()) ma ya pr
+
+        // function statement or declaration
+        function name(){
+            return "khine zin thin";
+        }
+
+        // function expression
+        let run = function(){
+            return name() + " "+ "this is run";
+        };
+
+        // IIFE 
+        (function (){
+            console.log("this is IIFE");
+        })()
+
+        // block scope
+        // {
+        //     let bb = 10;
+        //     var bb = 10; var so ya
+        // }
+        // console.log(bb);
+
+        // local scope
+        function cc(){
+            let cc = "this is cc";
+            console.log(cc);
+        }
+
+        // global scope
+        let global = "kyite talo call";
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>List</title>
+        <style>
+            .list-one{
+                list-style: square;
+                color: #b31e6f;
+            }
+            
+            .list-two{
+                border: 1px solid black;
+                list-style: none;
+                /* padding-left: 0; */
+                width: 200px;
+                padding: 5px;
+            }
+            .list-two li{
+                border: 1px solid black;
+                padding: 10px 15px;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+            .list-two li:last-child{
+                margin-bottom: 0;
+            }
+            .list-three{
+                list-style: none;
+                padding-left: 10px;
+                text-align: right;
+                border: 1px solid black;
+            }
+            .list-three li{
+                display: inline-block;
+                padding: 10px 15px;
+                margin: 5px 0px;
+                transition: 0.5s;
+                border: 1px solid black;
+            }
+            .list-three li:last-child{
+                margin-right: 5px;
+            }
+            .list-three li:hover,.list-three li.active{
+                background-color: #b31e6f;
+                color: white;
+            }
+            .list-four{
+                list-style: none;
+                padding-left: 0;
+            }
+            .list-four li{
+                background-color: #b31e6f;
+                color: white;
+                padding: 10px 15px;
+                margin-bottom: 5px;
+                width: 200px;
+                border-left: 2px solid black;
+                transition: 0.5s;
+                box-sizing: border-box;
+            }
+            .list-four li:hover,.list-four li.active{
+                border-left: 5px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="list-one">
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Strawberry</li>
+        </ul>
+        <ul class="list-two">
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Strawberry</li>
+        </ul>
+        <ul class="list-three">
+            <li>Apple</li>
+            <li>Orange</li>
+            <li class="active">Mango</li>
+            <li>Banana</li>
+            <li>Strawberry</li>
+        </ul>
+        <ul class="list-four">
+            <li>Apple</li>
+            <li class="active">Orange</li>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Strawberry</li>
+        </ul>
+    </body>
+</html>
